@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<meta charset="utf-8"/>		
+		<title>"Write as Rain"</title>
+		<link rel="stylesheet" href="stylesheet.css">
+		
+	</head>
+	
+	<body>
+		<img src="banner.png" id="banner">
+		<form id="settings">
+			<h3>Settings:</h3>
+			<input type="checkbox" id="dancingtroll"> Activate Punishment <br>
+			<h3>Rewards:</h3>
+			<table>
+				<tr>
+					<td>100 Words: </td>
+					<td><input type="checkbox" id="reward1" disabled>Rain<br></td>
+				</tr>
+				<tr>
+					<td>200 Words:</td>
+					<td><input type="checkbox" id="reward2" disabled>Thunderstorm<br></td>
+				</tr>
+				<tr>
+					<td>500 Words:</td>
+					<td><input type="checkbox" id="reward3" disabled>Owl and Frogs<br></td>
+				</tr>
+				<tr>
+					<td>800 Words:</td>
+					<td><input type="checkbox" id="reward4" disabled>Fireplace<br></td>
+				</tr>
+				<tr>
+					<td>1000 Words:</td>
+					<td><input type="checkbox" id="reward5" disabled>Ocean<br></td>
+				</tr>
+				<tr>
+					<td>1667 Words:</td>
+					<td><input type="checkbox" id="reward6" disabled>Ominous Piano<br></td>
+				</tr>
+			</table>
+		</form>
+			<div>
+				<form id="storyarea" name="storyarea">
+					<textarea style="resize:none" id="input" name="input" cols="90" rows="30" onkeydown="countWords(this.value,word_count);"></textarea><br>
+					<!-- <INPUT id="button" type=button value="Count Words" onClick="countWords(document.storyarea.input.value);"> -->
+					<!-- <INPUT type=button name="theButton" value="Clear Results" onClick='document.storyarea.results.value=""';> -->
+					<!-- <textarea name="results" row=5 cols=50></textarea> -->
+				</form>
+			</div>
+			<p id="imagearea"></p>
+			<div>
+			<form>
+				<span class="meta">
+					Word Count: <span id="word_count">0</span>
+				</span><br>
+			</div><br>
+			<footer>
+				<h5>© Copyright 2016, WriteasRain</h5>
+				<h5>Owl and Frogs sound attributed to shaka9 at freesound.org</h5>
+				<h5>Ominous Piano attributed to Kevin MacLeod at Incompetech.com</h5>
+			<footer>
+		<img id="l" src="untitled-1.png">
+	</body>
+</html>

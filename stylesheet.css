@@ -1,0 +1,55 @@
+body{
+	background-image: url("background.jpg");
+}
+
+#banner{
+	position: relative;
+	left: 40px;
+}
+
+#storyarea{
+	margin: auto;
+	padding-left: 60px;
+}
+
+#settings{
+	position: absolute;
+	border: 1px solid grey;
+	padding: 20px;
+	margin: auto;
+	left: 800px;
+	background-color: silver;
+	
+}
+
+#imagearea{
+	position: absolute;
+	top:200px;
+	left: 300px;
+	margin: auto;
+	
+}
+
+#button{
+	padding-left: 50px;
+}
+
+span.meta{
+	padding-left: 60px;
+	padding-top: 20px;
+	color: white;
+}
+
+footer{
+	line-height:.1;
+	padding: 1px;
+	color: white;
+}
+
+#l{
+	position: absolute;
+	top: 175px;
+	left: 100px;
+	opacity: 0.1;
+	visibility:hidden;
+}
